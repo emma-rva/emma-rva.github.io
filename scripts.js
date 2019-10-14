@@ -15,7 +15,7 @@ request.onload = function () {
 
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
-  if (request.status >= 200 && request.status < 400) {
+  if (request.status >= 0 && request.status < 4000) {
     data.forEach(clue => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
