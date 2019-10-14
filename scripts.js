@@ -21,11 +21,11 @@ request.onload = function () {
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = clue.value;
+      h1.textContent = clue.answer;
 
       const p = document.createElement('p');
-      clue.answer = clue.answer.substring(0, 300);
-      p.textContent = `${clue.answer}...`;
+      clue.question = clue.question.substring(0, 300);
+      p.textContent = `${clue.question}...`;
 
       container.appendChild(card);
       card.appendChild(h1);
