@@ -1,7 +1,7 @@
 const app = document.getElementById('root');
 
 const logo = document.createElement('img');
-logo.src = 'images/create-octocat.png';
+logo.src = 'images/IMG_4326.jpg';
 
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
