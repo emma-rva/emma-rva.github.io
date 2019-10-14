@@ -10,7 +10,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'http://jservice.io/api/clues?value=200&category=10', true);
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
@@ -20,11 +20,11 @@ request.onload = function () {
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = clue.answer;
+      h1.textContent = clue.title;
 
       const p = document.createElement('p');
-      clue.question = clue.question.substring(0, 300);
-      p.textContent = `${clue.question}...`;
+      clue.description = clue.description.substring(0, 300);
+      p.textContent = `${clue.description}...`;
 
       container.appendChild(card);
       card.appendChild(h1);
