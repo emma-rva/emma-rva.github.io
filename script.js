@@ -1,13 +1,13 @@
-const app = document.getElementById('root');
+//const app = document.getElementById('root');
 
-const logo = document.createElement('img');
-logo.src = 'images/sample.png';
+//const logo = document.createElement('img');
+//logo.src = 'images/sample.png';
 
 //const container = document.createElement('div');
 //container.setAttribute('class', 'container');
 
-app.appendChild(logo);
-app.appendChild(container);
+//app.appendChild(logo);
+//app.appendChild(container);
 
 var request = new XMLHttpRequest();
 request.open('GET', 'http://jservice.io/api/clues?category=139', true);
