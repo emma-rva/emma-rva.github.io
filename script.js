@@ -10,7 +10,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 var request = new XMLHttpRequest();
-request.open('GET', 'http://jservice.io/api/clues?value=200&category=10', true);
+request.open('GET', 'http://jservice.io/api/clues?category=139', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
