@@ -1,0 +1,93 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src:  url('../assets/Gotham-Medium.woff') format('woff'),
+        url('../assets/Gotham-Medium.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+	font-family: 'Helvetica', sans-serif;
+}
+
+h1{
+	margin: 10px auto;
+    display: block;
+    color: darken(lime, 20%);
+    text-align: center;
+}
+
+#catList{
+	ul{
+		li{
+			cursor:pointer;
+			list-style-type: none;
+			padding:10px;
+			margin:5px 0;
+			background: lighten(lime,40%);
+
+
+			&:hover, &:focus{
+				background:#f1f1f1
+			}
+
+		}
+	}
+}
+
+#clues{
+	ul{
+
+		li{
+			list-style-type: none;
+
+			.answer{
+				margin: 10px auto 5px;
+				padding: 2px 5px;
+				float: right;
+				background: #f7f8f8;
+				width: 100%;
+			}
+			::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, :-moz-placeholder {
+				color: lightGrey;
+			}
+		}
+	}
+}
+
+#total{
+	background: lighten(lime, 20%);
+	color: green;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.list-group-item.disabled{
+	background: darken(tomato, 40%);
+	color: #f1f1f1;
+	
+	input[type=text]:disabled {
+		cursor: not-allowed;
+	}
+}
+.correct{
+	color: darken(lime,10%);
+}
+.incorrect{
+	color: tomato;
+}
+
+.hidden{
+	display:none;
+}
+
+.selected{
+	background: darken(lime,20%) !important;
+	color: #fff;
+}
+
+input{
+	outline:none;
+}
