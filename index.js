@@ -1,6 +1,6 @@
 import '../css/global.scss'
-import { lowerCaseIt } from './helpers.js'
-import { getData } from './getData.js'
+import { lowerCaseIt } from 'helpers.js'
+import { getData } from 'getData.js'
 
 "use strict"
 
