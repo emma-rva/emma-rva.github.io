@@ -14,29 +14,6 @@ let availableQuesions = [];
 let questions = [];
 
 fetch(
-  "http://jservice.io/api/categories?&count=50"
-)
-  .then(res1 => {
-    return res1.json();
-  })
-  .then(loadedCategories => {
-    console.log(loadedCategories.results);
-    categories = loadedCategories.results.map(loadedCategory => {
-      const formattedCategory = {
-        category: loadedCategory.title
-      };
-
-      });
-      return formattedCategory;
-    });
-
-    startGame();
-  })
-  .catch(err => {
-    console.error(err);
-  });
-
-fetch(
   "https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple"
 )
   .then(res => {
