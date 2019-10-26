@@ -1,3 +1,4 @@
+
 module.exports = {
 	getData: url => {
 		return fetch(url)
@@ -6,3 +7,5 @@ module.exports = {
 				console.error('Error:', error)
 			)
 	}
+	
+}
