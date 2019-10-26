@@ -5,7 +5,7 @@
 	<title>Jeopardy Game</title>
 </head>
 <body>
-	<h1>Trivia test</h1>
+	<h1>Trivia </h1>
 	
 	 <div >
 	 	<div id="total"></div>
